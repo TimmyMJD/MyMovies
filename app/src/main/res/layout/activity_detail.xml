@@ -45,7 +45,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageViewAddToFavorite" />
 
         <TextView
-            android:id="@+id/textViewLableOriginal"
+            android:id="@+id/textViewLabelOriginal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Оригинальное название"
@@ -62,7 +62,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
 
         <TextView
-            android:id="@+id/textViewLableRating"
+            android:id="@+id/textViewLabelRating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="0dp"
@@ -96,7 +96,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textViewRating" />
 
         <TextView
-            android:id="@+id/textViewLableDescription"
+            android:id="@+id/textViewLabelDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Описание:"
@@ -109,7 +109,7 @@
             android:layout_height="wrap_content"
             android:text="TextView"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewLableDescription" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewLabelDescription" />
 
         <ImageView
             android:id="@+id/imageViewAddToFavorite"
@@ -122,5 +122,21 @@
             app:layout_constraintTop_toBottomOf="@+id/imageViewBigPoster"
             app:srcCompat="@drawable/yellow_star" />
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewTrailers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOverview" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewReviews"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recyclerViewTrailers"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
